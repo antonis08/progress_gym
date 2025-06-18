@@ -180,11 +180,18 @@ header .container {
 }
 
 .logo {
+    
+    /*
     font-family: 'Oswald', sans-serif;
     font-size: 2.2em;
     font-weight: 600;
     color: var(--accent-color);
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px;*/
+}
+
+.logo img{
+    height: 110px;
+    
 }
 
 .main-nav .nav-list {
@@ -300,8 +307,8 @@ header .container {
     color: var(--secondary-color);
 }
 
-/* Classes Section */
-.classes-grid {
+/* services Section */
+.services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
@@ -658,7 +665,7 @@ footer {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 90px; /* Height of header */
+        top: 110px; /* Height of header */
         left: 0;
         background-color: var(--dark-bg);
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -699,7 +706,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    .classes-grid, .trainers-grid, .membership-plans-grid, .gallery-grid, .contact-grid {
+    .services-grid, .trainers-grid, .membership-plans-grid, .gallery-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
 
