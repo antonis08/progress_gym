@@ -180,7 +180,6 @@ header .container {
 }
 
 .logo {
-    
     /*
     font-family: 'Oswald', sans-serif;
     font-size: 2.2em;
@@ -191,7 +190,6 @@ header .container {
 
 .logo img{
     height: 110px;
-    
 }
 
 .main-nav .nav-list {
@@ -235,6 +233,11 @@ header .container {
     color: var(--text-light);
     font-size: 2em;
     cursor: pointer;
+}
+
+/* FIX: Adjust scroll position for fixed header */
+section[id] { /* Targets all sections with an ID attribute */
+    scroll-margin-top: 150px; /* This value should be the height of your fixed header */
 }
 
 /* Hero Section */
@@ -729,6 +732,16 @@ footer {
 
     .btn {
         margin: 10px 5px; /* Adjust button margin for smaller screens */
+    }
+
+    /* FIX: Adjust scroll position for fixed header on mobile if different */
+    /* This rule will override the general one if the header height changes on smaller screens.
+       Based on your current CSS, the fixed header height remains approximately 150px
+       due to the logo height and padding, even on mobile.
+       If you notice a difference, adjust this value.
+    */
+    section[id] {
+        scroll-margin-top: 150px;
     }
 }
 
