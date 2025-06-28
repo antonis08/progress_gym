@@ -247,7 +247,7 @@ section[id] { /* Targets all sections with an ID attribute */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -669,7 +669,7 @@ footer {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 110px; /* Height of header */
+        top: 100px; /* Height of header */
         left: 0;
         background-color: var(--dark-bg);
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -691,7 +691,7 @@ footer {
     }
 
     .hero {
-        height: 85vh;
+        height: 100vh;
         margin-top: 0;
         padding-top: 90px;
     }
