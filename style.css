@@ -164,7 +164,7 @@ ul {
 header {
     background-color: var(--dark-bg);
     color: var(--text-light);
-    padding: 20px 0;
+    padding: 2px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -179,17 +179,18 @@ header .container {
     align-items: center;
 }
 
+/*
 .logo {
-    /*
+
     font-family: 'Oswald', sans-serif;
     font-size: 2.2em;
     font-weight: 600;
     color: var(--accent-color);
-    letter-spacing: 1.5px;*/
-}
+    letter-spacing: 1.5px;
+}*/
 
 .logo img{
-    height: 110px;
+    height: 90px;
 }
 
 .main-nav .nav-list {
@@ -237,7 +238,7 @@ header .container {
 
 /* FIX: Adjust scroll position for fixed header */
 section[id] { /* Targets all sections with an ID attribute */
-    scroll-margin-top: 150px; /* This value should be the height of your fixed header */
+    scroll-margin-top: 55px; /* This value should be the height of your fixed header */
 }
 
 /* Hero Section */
@@ -741,7 +742,7 @@ footer {
        If you notice a difference, adjust this value.
     */
     section[id] {
-        scroll-margin-top: 150px;
+        scroll-margin-top: 55px;
     }
 }
 
